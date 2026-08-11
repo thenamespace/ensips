@@ -1,0 +1,11 @@
+# Namespace ENSIP proposals
+
+Draft ENSIPs authored by the Namespace team, incubated here before submission to
+[ensdomains/ensips](https://github.com/ensdomains/ensips) and the ENS DAO forum.
+
+| Proposal | Status | Summary |
+|---|---|---|
+| [resolver-discovery](./resolver-discovery.md) | Draft | A `getRecordsData` resolver method that enumerates which records a name has set, CCIP Read compatible, so clients stop probing guess lists. |
+
+Each proposal is one markdown file following the ENSIP template. Discussion happens
+in issues and PRs on this repo until a draft is ready to submit upstream.
