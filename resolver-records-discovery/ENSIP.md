@@ -2,7 +2,7 @@
 
 | | |
 |---|---|
-| **Author** | @artii.eth |
+| **Author** | @artii.eth, happysingh.eth |
 | **Status** | Draft (pre-submission) |
 | **Type** | Standards Track |
 | **Created** | 2026-08-11 |
@@ -27,6 +27,11 @@ a guess list: a dozen popular text keys and a few coin types. Everything outside
 guess list is invisible. A name with `text("com.farcaster")` or an address for an
 uncommon chain simply does not render in wallets and profile UIs, even though the
 data is set and resolvable.
+
+Parameterized text records cannot be covered by a guess list at all. ENSIP-25
+defines `agent-registration[<registry>][<agentId>]`; a client starting from an ENS
+name does not know which registry addresses or agent IDs to query, so its agent
+registrations cannot be discovered through resolver point queries alone.
 
 For names with onchain resolvers on L1, indexers partially repair this: the ENS
 subgraph reconstructs key sets from `TextChanged` and `AddressChanged` events. Even
